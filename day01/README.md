@@ -1,19 +1,34 @@
-# Day 1 - Memory and Pointers
+# Day 1 - Memory and Pointer Fundamentals
+
+## Objective
+
+Understand how variables are represented in memory and how pointers provide direct access to memory locations.
 
 ## Concepts Learned
 
-- Variables are stored in memory.
+- Computer memory stores information as binary data.
+- Variables occupy memory locations.
+- Memory addresses identify locations in RAM.
 - Pointers store addresses.
-- Dereferencing accesses the value at an address.
+- Dereferencing accesses data stored at an address.
 
 ## Experiment
 
-Created an integer variable,
-stored its address in a pointer,
-and modified the value through memory access.
+Implemented a C program that:
 
-## Tools
+1. Creates an integer variable.
+2. Obtains its memory address.
+3. Stores the address inside a pointer.
+4. Reads and modifies the original value through the pointer.
+
+## Technologies
 
 - C
-- GCC
+- GCC Compiler
 - GitHub Codespaces
+- Linux Terminal
+
+## Key Learning
+
+A variable name exists only for the programmer.
+The computer operates using memory addresses and machine instructions.
