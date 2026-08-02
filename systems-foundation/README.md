@@ -1,166 +1,533 @@
-# CS Foundations
+<div align="center">
 
-> Building the foundations of systems programming from first principles.
+# C Systems Foundations
+# Understanding The Machine Beneath The Code
 
-![Language](https://img.shields.io/badge/Language-C-blue)
+### A first-principles exploration of memory, execution, and low-level software engineering using C.
+
+<br>
+
+![Language](https://img.shields.io/badge/Language-C17-blue)
 ![Focus](https://img.shields.io/badge/Focus-Systems%20Programming-green)
-![Level](https://img.shields.io/badge/Level-Computer%20Science-red)
+![Level](https://img.shields.io/badge/Approach-First%20Principles-red)
+![Status](https://img.shields.io/badge/Progress-Complete-success)
+
+</div>
+
 
 ---
 
-# Overview
+# Project Overview
 
-This repository documents the foundation of my 50 day journey towards becoming a software engineer with a deep understanding of computer systems.
+Modern software engineering relies on layers of abstraction.
 
-Rather than simply learning how to write programs, the goal of this project is to understand **how software interacts with hardware**, **how memory is managed**, and **how operating systems execute programs**.
+Developers write applications using:
 
-Every folder explores one fundamental concept of systems programming through:
+- frameworks,
+- libraries,
+- programming languages,
+- operating systems.
 
-- Detailed theory notes
-- Well-documented C source code
-- Practical experiments
-- Professional documentation
-- Industry-relevant examples
-
-The repository is designed as the foundation for a larger Computer Science roadmap later covering:
-
-- Discrete Mathematics
-- Algorithms
-- Data Structures
-- Computer Architecture
-- Operating Systems
-- Networking
-- Compiler Design
-- Artificial Intelligence Mathematics
-
-By understanding these fundamentals first, later topics become significantly easier to understand.
-
----
-
-# What is my aim? 
-
-Many Computer Science courses teach students how to write code.
-
-Far fewer explain **why computers behave the way they do.**
-
-This repository focuses on understanding the machine beneath the code.
-
-Topics such as memory layout, pointers, stack frames, heap allocation, file systems and bitwise operations are explored from both a theoretical and practical perspective.
-
-The aim is not simply to produce working programs, but to develop the mental models required for systems programming and software engineering.
-
----
-
-# Repository Structure
+However, beneath every application exists a fundamental layer:
 
 ```
+Source Code
 
-foundations/
+↓
 
-├── 00_environment/
-├── 01_memory_model/
-├── 02_pointers/
-├── 03_arrays_strings/
-├── 04_functions/
-├── 05_structs/
-├── 06_file_io/
-├── 07_dynamic_memory/
-├── 08_bitwise/
-├── 09_debugging/
-├── 10_preprocessor/
-├── 11_command_line/
-└── 12_capstone/
+Compiler
 
+↓
+
+Memory
+
+↓
+
+CPU Instructions
+
+↓
+
+Hardware
 ```
 
-Each folder contains:
+This project explores that foundation.
 
-- README.md
-- notes.md
-- Well-commented C source code
-- Practical experiments
+The objective is to understand **how software actually executes**, rather than only learning how to use higher-level technologies.
 
 ---
 
-# Learning Objectives
+#  Project Mission
 
-After completing this foundation of my journey I should understand:
+> Build a strong systems programming foundation by understanding memory, data representation, program execution, and low-level computer behaviour from first principles.
 
-- How C programs are compiled and executed
-- How memory is organised
-- Stack vs Heap allocation
-- Pointer arithmetic
-- Arrays and strings in memory
-- Function calls and stack frames
-- Structures and memory alignment
-- Dynamic memory management
-- Bitwise operations
-- File input/output
-- Assertions and debugging
-- The C preprocessor
-- Command-line arguments
-- Building small systems programs
+This stage represents the first stage of a wider Computer Science transformation journey.
+
+Before studying:
+
+- operating systems,
+- compilers,
+- computer architecture,
+- algorithms,
+- artificial intelligence,
+
+it is essential to understand the machine that runs them.
 
 ---
 
-# Technologies
+# Learning Philosophy
+
+This project follows an engineering approach:
+
+```
+Theory
+
+↓
+
+Implementation
+
+↓
+
+Experimentation
+
+↓
+
+Understanding
+```
+
+Every topic is explored through:
+
+## 1. Conceptual Understanding
+
+Learning:
+
+- why the concept exists,
+- how the computer implements it,
+- common design decisions,
+- engineering trade-offs.
+
+
+## 2. Practical Implementation
+
+Building:
+
+- C programs,
+- memory experiments,
+- debugging examples,
+- low-level demonstrations.
+
+
+## 3. Documentation
+
+Recording:
+
+- technical notes,
+- diagrams,
+- explanations,
+- lessons learned.
+
+
+---
+
+# Repository Architecture
+
+The foundation is organised into progressive systems concepts.
+
+```
+00_c_systems_foundations/
+
+│
+├── 00_environment
+│
+├── 01_memory_model
+│
+├── 02_pointers
+│
+├── 03_arrays_strings
+│
+├── 04_functions
+│
+├── 05_structs
+│
+├── 06_file_io
+│
+├── 07_dynamic_memory
+│
+├── 08_bitwise
+│
+├── 09_debugging
+│
+└── 10_preprocessor
+```
+
+Each section contains:
+
+```
+README.md
+
+↓
+
+notes.md
+
+↓
+
+C implementations
+
+↓
+
+Practical experiments
+```
+
+---
+
+# Topics Covered
+
+## 01 — Memory Model
+
+Understanding:
+
+- program memory layout,
+- stack memory,
+- heap memory,
+- static memory,
+- execution regions.
+
+Key idea:
+
+> Programs are not just instructions. They are instructions operating on memory.
+
+
+---
+
+## 02 — Pointers
+
+Understanding:
+
+- memory addresses,
+- pointer arithmetic,
+- references,
+- indirect access,
+- double pointers.
+
+Key idea:
+
+> Pointers provide direct control over memory.
+
+
+---
+
+## 03 — Arrays & Strings
+
+Understanding:
+
+- contiguous memory,
+- array decay,
+- character storage,
+- string representation.
+
+Key idea:
+
+> Data structures are ultimately memory layouts.
+
+
+---
+
+## 04 — Functions & Execution
+
+Understanding:
+
+- stack frames,
+- function calls,
+- recursion,
+- return addresses.
+
+Key idea:
+
+> Every function call creates a temporary execution environment.
+
+
+---
+
+## 05 — Structures
+
+Understanding:
+
+- custom data types,
+- memory organisation,
+- alignment,
+- abstraction in C.
+
+Key idea:
+
+> Complex data is built from simple memory representations.
+
+
+---
+
+## 06 — File I/O
+
+Understanding:
+
+- persistent storage,
+- file streams,
+- binary data,
+- system interaction.
+
+Key idea:
+
+> Memory is temporary; files provide persistence.
+
+
+---
+
+## 07 — Dynamic Memory
+
+Understanding:
+
+- heap allocation,
+- malloc,
+- calloc,
+- realloc,
+- free,
+- memory ownership.
+
+Key idea:
+
+> Manual memory management requires responsibility.
+
+
+---
+
+## 08 — Bitwise Operations
+
+Understanding:
+
+- binary representation,
+- bit manipulation,
+- masks,
+- flags,
+- hardware-level control.
+
+Key idea:
+
+> Computers ultimately operate on bits.
+
+
+---
+
+## 09 — Debugging
+
+Understanding:
+
+- runtime failures,
+- assertions,
+- defensive programming,
+- debugging methodology.
+
+Key idea:
+
+> Engineering requires understanding failure, not avoiding it.
+
+
+---
+
+## 10 — C Preprocessor
+
+Understanding:
+
+- macros,
+- compilation stages,
+- header organisation,
+- conditional compilation.
+
+Key idea:
+
+> Large software systems require structure before execution.
+
+
+---
+
+# Technologies Used
+
+## Programming
 
 - C17 Standard
-- GCC
-- Make
-- GDB
-- Visual Studio Code
+
+## Development Tools
+
+- GCC Compiler
+- GDB Debugger
+- VS Code
 - Linux Command Line
+- Git/GitHub
+
+
+## Engineering Practices
+
+- Documentation-driven development
+- Version control
+- Modular organisation
+- Clean code principles
+
 
 ---
 
+# Skills Developed
 
-# Reading
+## Systems Programming
 
-- The C Programming Language — Kernighan & Ritchie
-- Computer Systems: A Programmer's Perspective (CS:APP)
-- Operating Systems: Three Easy Pieces
-- Modern C
+✓ Memory management  
+✓ Pointer manipulation  
+✓ Low-level debugging  
+✓ Binary representation  
+✓ File handling  
+
+
+## Computer Science Foundations
+
+✓ Understanding execution models  
+✓ Reasoning about program behaviour  
+✓ Connecting software and hardware  
+
+
+## Software Engineering
+
+✓ Technical documentation  
+✓ Code organisation  
+✓ Reproducible builds  
+✓ Professional Git workflow  
+
 
 ---
 
-# Overall Roadmap
+# Featured Engineering Demonstrations
 
-This repository is the prerequisite for several larger repositories.
+## Memory Exploration
+
+Implemented programs exploring:
+
+- stack vs heap behaviour,
+- memory addresses,
+- allocation patterns.
+
+
+---
+
+## Dynamic Memory Experiments
+
+Built examples demonstrating:
+
+- manual allocation,
+- resizing memory,
+- ownership management.
+
+
+---
+
+## Binary Manipulation Toolkit
+
+Explored:
+
+- bit operations,
+- masks,
+- permission-style flags.
+
+
+---
+
+## Defensive Programming Examples
+
+Implemented:
+
+- assertions,
+- validation,
+- safe failure handling.
+
+
+---
+
+# Core References
+
+This foundation was developed alongside:
+
+## Books
+
+- *Computer Systems: A Programmer's Perspective*  
+  Bryant & O'Hallaron
+
+- *The C Programming Language*  
+  Kernighan & Ritchie
+
+- *Operating Systems: Three Easy Pieces*
+
+
+---
+
+#  Connection To The Larger Roadmap
+
+This repository is the foundation layer for:
 
 ```
+C Systems Foundations
 
-CS Foundations
-↓
+        ↓
 
 Discrete Mathematics
 
-↓
+        ↓
 
-Systems Architecture
+Computer Architecture
 
-↓
+        ↓
 
-Data Structures
+Data Structures & Algorithms
 
-↓
+        ↓
 
 Operating Systems
 
-↓
+        ↓
 
 Networking
 
-↓
+        ↓
 
-Linear Algebra
-
-↓
-
-AI Mathematics
-
+Artificial Intelligence Mathematics
 ```
 
-Each folder builds directly on the previous one.
+Understanding the machine makes advanced computer science concepts easier to reason about.
 
 ---
+
+
+---
+
+# Next Stage
+
+The next stage of the journey moves from:
+
+```
+How computers execute programs
+
+↓
+
+How computers reason about information
+```
+
+Next:
+
+# Discrete Mathematics & Formal Reasoning
+
+Topics:
+
+- Predicate Logic
+- Sets
+- Relations
+- Graph Theory
+- Automata
+
+
+---
+
+# Engineering Principle
+
+> The best engineers do not only know how to use abstractions. They understand what those abstractions are built upon.
