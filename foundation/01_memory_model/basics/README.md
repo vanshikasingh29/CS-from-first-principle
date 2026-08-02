@@ -1,4 +1,4 @@
-# Day 1 - Memory and Pointer Fundamentals
+# Foundation - Memory and Pointer Fundamentals
 
 ## Objective
 
