@@ -39,7 +39,7 @@ Understanding this is essential for:
 
 # Learning Objectives
 
-After completing this folder, you should understand:
+After completing this chapter, you should understand:
 
 - How arrays are stored in memory
 - Why array indexing begins at zero

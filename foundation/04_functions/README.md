@@ -34,7 +34,7 @@ This process is managed through:
 
 # Learning Objectives
 
-After completing this folder, you should understand:
+After completing this chapter, you should understand:
 
 - How functions execute internally
 - Stack frames

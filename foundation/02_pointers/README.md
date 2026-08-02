@@ -66,7 +66,7 @@ Hardware Resources: The Linux Kernel and the CPU’s Memory Management Unit (MMU
 
 # Learning Objectives
 
-After completing this folder, you should understand:
+After completing this chapter, you should understand:
 
 - What an address is
 - What a pointer stores
