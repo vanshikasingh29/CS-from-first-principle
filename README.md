@@ -492,3 +492,20 @@ Computer Scientist
 ```
 
 This repository documents that transformation.
+
+## Engineering Projects
+
+### Mini Memory Manager
+
+A custom memory allocator implemented in C.
+
+Built after studying:
+
+- memory models
+- pointers
+- heap allocation
+- low-level systems programming
+
+Repository:
+[https://github.com/vanshikasingh29/mini-memory-manager.git](https://github.com/vanshikasingh29/mini-memory-manager.git)
+
