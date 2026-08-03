@@ -494,8 +494,27 @@ Computer Scientist
 This repository documents that transformation.
 
 ## Engineering Projects
+The following projects represent practical implementations of concepts studied throughout this journey.
+
+The purpose is to move from:
+
+Theory
+
+↓
+
+Implementation
+
+↓
+
+Engineering Application
+
+
+---
 
 ### Mini Memory Manager
+Related to:
+
+**C Systems Foundations**
 
 A custom memory allocator implemented in C.
 
@@ -508,4 +527,22 @@ Built after studying:
 
 Repository:
 [https://github.com/vanshikasingh29/mini-memory-manager.git](https://github.com/vanshikasingh29/mini-memory-manager.git)
+
+### Logic Query Engine
+Related to:
+
+**Discrete Mathematics**
+
+A miniature relational database query engine implemented from first principles.
+
+Built after studying:
+
+- predicate logic
+- sets
+- relations
+- relational algebra
+- query processing
+
+Repository:
+[https://github.com/vanshikasingh29/mini-memory-manager.git](https://github.com/vanshikasingh29/logic-query-engine.git)
 
