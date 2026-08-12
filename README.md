@@ -446,7 +446,7 @@ Focus on:
 ```
 Systems Foundations        ██████████ 100%
 
-Discrete Mathematics       ░░░░░░░░░░ 0%
+Discrete Mathematics       ██████████ 100%
 
 Systems Architecture       ░░░░░░░░░░ 0%
 
