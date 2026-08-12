@@ -448,7 +448,7 @@ Systems Foundations        ██████████ 100%
 
 Discrete Mathematics       ██████████ 100%
 
-Systems Architecture       ░░░░░░░░░░ 0%
+Systems Architecture       ██████████ 100%
 
 Algorithms                 ░░░░░░░░░░ 0%
 
