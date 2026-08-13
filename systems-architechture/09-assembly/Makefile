@@ -1,11 +1,12 @@
 CC = gcc
-ASM = nasm
 
 CFLAGS = -Wall -Wextra -std=c17 -g
-ASMFLAGS = -f elf64
 
 PROGRAM = assembly_demo
+
 TEST_PROGRAM = assembly_tests
+
+ASM_SOURCE = assembly_basics.asm
 
 ASM_OBJECT = assembly_basics.o
 
@@ -13,8 +14,8 @@ ASM_OBJECT = assembly_basics.o
 all: $(PROGRAM)
 
 
-$(ASM_OBJECT):
-	$(ASM) $(ASMFLAGS) assembly_basics.asm -o $(ASM_OBJECT)
+$(ASM_OBJECT): $(ASM_SOURCE)
+	$(CC) -x assembler -c $(ASM_SOURCE) -o $(ASM_OBJECT)
 
 
 $(PROGRAM): main.c $(ASM_OBJECT)
