@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 #include "graph_algorithms.h"
 
 
@@ -58,8 +60,10 @@ int dijkstra(
             if (
                 !visited[i] &&
                 distances[i] != INF &&
-                (current == -1 ||
-                 distances[i] < distances[current])
+                (
+                    current == -1 ||
+                    distances[i] < distances[current]
+                )
             )
             {
                 current = i;
@@ -76,9 +80,11 @@ int dijkstra(
         visited[current] = 1;
 
 
-        for (int neighbour = 0;
-             neighbour < vertices;
-             neighbour++)
+        for (
+            int neighbour = 0;
+            neighbour < vertices;
+            neighbour++
+        )
         {
             int weight =
                 graph[current][neighbour];
@@ -149,16 +155,20 @@ int bellman_ford(
     distances[source] = 0;
 
 
-    for (int iteration = 0;
-         iteration < vertices - 1;
-         iteration++)
+    for (
+        int iteration = 0;
+        iteration < vertices - 1;
+        iteration++
+    )
     {
         int changed = 0;
 
 
-        for (int i = 0;
-             i < edge_count;
-             i++)
+        for (
+            int i = 0;
+            i < edge_count;
+            i++
+        )
         {
             int u = edges[i][0];
             int v = edges[i][1];
@@ -191,8 +201,8 @@ int bellman_ford(
 
 
         /*
-         * No changes means the shortest paths have already
-         * converged.
+         * If no distance changed, the shortest paths
+         * have already converged.
          */
         if (!changed)
         {
@@ -204,9 +214,11 @@ int bellman_ford(
     /*
      * Detect reachable negative cycles.
      */
-    for (int i = 0;
-         i < edge_count;
-         i++)
+    for (
+        int i = 0;
+        i < edge_count;
+        i++
+    )
     {
         int u = edges[i][0];
         int v = edges[i][1];
@@ -235,7 +247,7 @@ int bellman_ford(
  *
  * Dynamic programming algorithm for all-pairs shortest paths.
  *
- * The recurrence is:
+ * Recurrence:
  *
  * D_k(i,j) =
  * min(
@@ -294,7 +306,7 @@ int floyd_warshall(
 
 
     /*
-     * Negative diagonal entry means a negative cycle exists.
+     * A negative diagonal entry indicates a negative cycle.
      */
     for (int i = 0; i < vertices; i++)
     {
