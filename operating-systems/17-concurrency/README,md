@@ -1,0 +1,21 @@
+# Topic 17 — Concurrency
+
+This lab explores concurrent execution in C using POSIX threads.
+
+## Concepts
+
+- Threads
+- Shared state
+- Race conditions
+- Mutexes
+- Semaphores
+- Deadlocks
+- Thread synchronisation
+
+## Objective
+
+Demonstrate how multiple threads interact with shared resources and how
+synchronisation primitives are used to make concurrent programs correct.
+
+## Build
+
